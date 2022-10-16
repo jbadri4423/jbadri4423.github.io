@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(228, 227, 227);
+}
+.top {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 18vh;
+    background: white;
+    display: grid;
+    place-content: center;
+    box-shadow: 0 4px 4px -2px rgb(40 40 40);
+}
+.headline {
+    font-size: 4rem;
+    font-family: 'didact gothic', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1.2rem;
+}
+.middle {
+    width: 80%;
+    gap: 2rem;
+    display: grid;
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(max(240px, 45%), 2fr));
+}
+.album-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background: white;
+    border-radius: 5px;
+    transition: all linear 400ms;
+    box-shadow: 0 0 8px rgb(40 40 40);
+    padding: 5%;
+}
+.album-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgb(60 60 60);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    float: left;
+}
+.info {
+    margin-left: 1rem;
+}
+.card-1 {
+    background: linear-gradient(to bottom right, rgb(163, 163, 163), rgb( 255 255 255)30%);
+}
+.card-2 {
+    background: linear-gradient(to bottom right, rgb(3, 77, 25), rgb(255, 255, 255)30%);
+}
+.card-3 {
+    background: linear-gradient(to bottom right, rgb(251, 187, 220), rgb(255, 255, 255)30%);
+}
+.card-4 {
+    background: linear-gradient(to bottom right, rgb(235, 0, 0), rgb(255, 255, 255)30%);
+}
+.card-5 {
+    background: linear-gradient(to bottom right, rgb(67, 80, 23), rgb(255 255 255)30%);
+}
+.card-6 {
+    background: linear-gradient(to bottom right, rgb(255, 136, 0), rgb(255 255 255)30%);
+}
+.card-7 {
+    background: linear-gradient(to bottom right, rgb(176, 108, 73), rgb(255 255 255)30%);
+}
+.card-8 {
+    background: linear-gradient(to bottom right, rgb(2, 53, 112), rgb(255 255 255)30%);
+}
+.card-9 {
+    background: linear-gradient(to bottom right, rgb(53, 33, 25), rgb(255 255 255)30%);
+}
+.card-0 {
+    background: linear-gradient(to bottom right, rgb(0, 63, 171), rgb(255 255 255)30%);
+}
+.bottom {
+    width: 100%;
+    height: 6vh;
+    background: black;
+}
+@media screen and (max-width: 768px) {
+    .headline {
+        font-size: 1.8rem;
+    }
+}
+h1 {
+    font-family: verdana, sans-serif;
+    font-weight: 800;
+}
+h3 {
+    font-family: Verdana, sans-serif;
+    font-weight: 600;
+}
+p {
+    font-family: verdana, sans-serif;
+    font-weight: 200;
+}
